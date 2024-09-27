@@ -30,7 +30,7 @@ aside {
 }
 aside img {
      width: 200px;
-     height: fit-content;
+     height: auto;
 }
 main img {
     width: 150px;
@@ -42,5 +42,5 @@ p {
 footer {
     margin-top: 2rem;
     border-top: 2px dotted;
-    text-align: right;
+    text-align: center;
 }
