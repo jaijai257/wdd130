@@ -1,0 +1,91 @@
+root {
+    --primary-color: #505033;
+    --secondary-color: #264969;
+    --accent-color: #cfcfb4;
+    --background-color: #b4cde4;
+    --text-color: #333;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 20px;
+}
+header nav {
+    background-color: #505033;
+    padding: 20px;
+}
+nav a {
+    margin: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+nav a:hover {
+    background: #333;
+    color: white;
+    
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top: 10px;
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    top: 0;
+    left: 0;
+}
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    bottom: 40px;
+    color: #fff;
+}
+.hero article {
+    position: absolute;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    left: 20px;  
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    bottom: 200px;
+}
+.hero article img {
+    max-width: 100px;
+    float: right;
+    margin: 10px;
+}
+h2 {
+    color:#264969;
+
+}
+p{ 
+    color: black;
+}
+img {
+    padding: 10px;
+    width: 90%; 
+    height: 90%; 
+    object-fit: cover; 
+    border-radius: 20px;
+}
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+}
+footer img {
+    width: 50px;
+}
+
