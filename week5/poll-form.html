@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML FORM</title>
+    <link rel="stylesheet" href="poll-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | HTML FORM</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+              <div class="form-item column2">
+                <label for="Fullname">Fullname:</label>
+                <input type="text" id="Fullname" name="fullname">
+              </div>
+                <pre></pre>
+              <div class="form-item column2">
+                <label for="Useremail">Email:</label>
+                <input type="email" name="Useremail" id="useremail">
+              </div>
+            </fieldset><form action="">
+            <fieldset>
+                <legend>Question</legend>
+              <div class="form-item column1">
+                <label for="browser">What is your favorite browser? </label>
+                <select name="browser" id="browser">
+                  <option value="Chrome">Chrome</option>
+                  <option value="Firefox">Firefox</option>
+                  <option value="Edge">Edge</option>
+                  <option value="Bing">Bing</option>
+                  <option value="Google">Google</option>
+                </select>
+              </div>
+                <pre></pre>
+              <div class="form-item column1">
+                <label for="Pet">Do you have pets? </label>
+                <input type="checkbox" name="Pet" id="Pet">
+              </div>
+                <pre></pre>
+                <label for="feedback">Place the place you have lived in? </label>
+                <textarea name="feedback" id="feedback" rows="3">Nigeria, Washington DC, New York, Dubai </textarea>
+            </fieldset>
+            <button>Submit Form</button>
+            </form>
+        </form>
+    </main>
+    <footer> ©2024 | HTML FORM </footer>
+
+</body>
+</html>
