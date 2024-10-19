@@ -129,14 +129,18 @@ img {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     background-color: var(--primary-color);
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+}
+.social-links a img {
+    width: 30px;
+    margin-left: 10px;
+}
+.social-links nav a img {
+    right: 10px;
 }
 
-footer nav img {
-    width: 55px;
-    margin: 10px;
-}
 
