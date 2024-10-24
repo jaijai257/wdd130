@@ -1,0 +1,162 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #f1c40f;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --font-primary: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section Styling */
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+/* Nav Styling */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero article {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    margin-left: 20px;
+}
+
+/* History Section Styling */
+.history {
+    padding: 40px 20px;
+    background-color: var(--background-color);
+}
+
+.history h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.history p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Adventure Section Styling */
+.adventure {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.adventure figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adventure figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.adventure figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer Section Styling */
+footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+}
+
+.social-links a img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}

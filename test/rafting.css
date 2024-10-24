@@ -1,70 +1,69 @@
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #f1c40f;
-    --background-color: #f9f9f9;
-    --text-color: #333;
-    --font-primary: 'Poppins', sans-serif;
+    --primary-color: #505033;
+    --secondary-color: #264969;
+    --background-color: #b4cde4;
+    --text-color1: #333;
+    --font-primary: 'Merriweather', roboto;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: var(--font-primary);
     background-color: var(--background-color);
     color: var(--text-color);
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
-
-/* Header Section Styling */
 header {
     background-color: var(--primary-color);
-    padding: 20px;
+    padding: 1rem;  
+    margin: 1rem auto;
+    text-align: center;
 }
-
 .header-container {
-    display: grid;
-    grid-template-columns: 150px 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-
 .logo {
-    width: 100%;
+    width: 70px;
     height: auto;
 }
 
-/* Nav Styling */
 nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 4px;
+    list-style: none;
 }
-
+li{
+    padding: 1em;
+}
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: rgb(0, 0, 0);
     font-weight: bold;
+    text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+nav ul li:hover {
+    color: #3480b2;
+    background-color: aliceblue;
 }
-
-/* Hero Section Styling */
+img {
+    max-width: 100%;
+}
 .hero {
     position: relative;
     width: 100%;
-    height: 400px;
-}
-
+    height: 500px;
+    background-color: var(--background-color);
+ }
 .hero img {
     width: 100%;
     height: 100%;
@@ -74,32 +73,29 @@ nav ul li a:hover {
 .hero h1 {
     position: absolute;
     top: 20px;
-    left: 20px;
-    color: white;
-    font-size: 3rem;
-    font-weight: 700;
+    left: 30px;
+    color: aliceblue;
+    
 }
-
 .hero article {
     position: absolute;
-    top: 50%;
-    left: 10%;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
     border-radius: 10px;
-    width: 40%;
+    padding: 20px;
+    top: 20%;
+    background-color: var(--background-color);
+    width: 95%;
+    right: 3%;  
+    opacity: 0.8;
 }
-
 .hero article img {
     float: right;
-    width: 150px;
-    margin-left: 20px;
+    max-width: 220px;
+    margin: 10px;
+    border-radius: 10px;
 }
-
-/* History Section Styling */
 .history {
-    padding: 40px 20px;
-    background-color: var(--background-color);
+    padding: 20px;
+    background-color: #E6E6E6;
 }
 
 .history h2 {
@@ -110,28 +106,26 @@ nav ul li a:hover {
 
 .history p {
     font-size: 1.2rem;
-    line-height: 1.6;
 }
-
+.history img {
+    width: 30%;
+    height: auto;
+    
+}
 /* Adventure Section Styling */
 .adventure {
-    padding: 40px 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    text-align: center;
+    margin: 40px;
 }
-
-.adventure figure {
+.adventure-img{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
 }
-
-.adventure figure img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.adventure-img figure {
+    flex: 5;
+    min-width: 200px;
+    text-align: center;
 }
 
 .adventure figcaption {
@@ -139,24 +133,25 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* Footer Section Styling */
 footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
     background-color: var(--primary-color);
-    padding: 20px;
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 100%;
+}
+nav {
+    display: flex; 
+    align-items: center; 
 }
 
-footer p {
-    color: white;
-}
-
-.social-links a img {
+nav a img {
     width: 30px;
-    margin-left: 10px;
-}
-
-.social-links a:hover {
-    opacity: 0.8;
+    margin-left: 10px; 
 }

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="contact">
-    <title>Contact | WDD 130</title>
+    <meta name="description" content="Get in touch with Offshore Adventure Rafting for inquiries, bookings, and more.">
+    <title>Contact Us | Offshore Adventure Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +17,16 @@
           <nav>
             <ul>
               <li>
-                <a href="index.hmtl">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
                 <a href="about.html">About</a>
               </li>
               <li>
-                <a href="trips.hmtl">Trips</a>
+                <a href="trips.html">Trips</a>
               </li>
               <li>
-                <a href="contact.hmtl">Contact</a>
+                <a href="contact.html">Contact</a>
               </li>
             </ul>
           </nav>
@@ -68,15 +68,84 @@
                 <figure>
                 <img src="images/teams.webp" alt="A team" >
                 <figcaption>Team work</figcaption>
+            </section>
+            <section class="team">
+              <h2>Meet Our Team</h2>
+              <div class="team-images">
+                  <figure>
+                        <img src="images/employees/emp 1.webp" alt="Employee 1">
+                        <figcaption>John Doe - Rafting Guide</figcaption>
+                   </figure>
+                   <figure>
+                         <img src="images/employees/emp 2.webp" alt="Employee 2">
+                         <figcaption>Jane Smith - Safety Officer</figcaption>
+                  </figure>
+                  <figure>
+                        <img src="images/employees/emp 3.webp" alt="Employee 3">
+                        <figcaption>Mike Johnson - Customer Service</figcaption>
+                  </figure>
+              </div>
+            </section>
+                </figure>
             </div>
             </section>
+            
+          <section class="contact-form">
+            <h2><strong>Bookings</strong></h2>
+            <form>
+              <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        <pre></pre>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <pre></pre>
+                <label for="phone number">Phone Number</label>
+                <input type="text" id="phone number" name="phone number" required>
+              </fieldset>
+              <form action="">
+              <fieldset>
+                <legend>Please select your inquiry type:</legend>
+        
+                <label>
+                  <input type="radio" name="inquiry" value="general"> General Inquiry
+                </label><br>
+        
+               <label>
+                 <input type="radio" name="inquiry" value="reservation"> Reservation Question
+               </label><br>
+        
+               <label>
+                 <input type="radio" name="inquiry" value="suggestion"> Website Suggestion
+               </label><br>
+                </select>
+                <pre></pre>
+                <label for="Reviews">Reviews</label>
+                <textarea id="Reviews" name="Reviews" rows="1" required></textarea>
+                <pre></pre>
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes"> Subscribe to our newsletter
+                </label>
+                <pre></pre>
+                <button type="submit">Submit</button>
+              </fieldset>
+              </form>
+            </form>
+          <section class="contact-info">
+              <h2>Contact Information</h2>
+              <p><strong>Address:</strong> Road 22 Treasure Park Golf and estate, Shimawa, Ogun State, Nigeria</p>
+              <p><strong>Phone:</strong> <img src="images/phone.webp" alt="">+234 9046764045</p>
+              <p><strong>Email:</strong> <a href="mailto:offshoreadventure@gmail.com">offshoreadventure@gmail.com</a></p>
+          </section>
+          <section class="map">
+            <h2><strong>Our Location</strong></h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7923.72874532453!2d3.5118277229277255!3d6.786354429324701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bc190fcd4e649%3A0xc40ec4ae8ca1f6c!2sShimawa%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1729376335139!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
    </main> 
    <footer>
-    <div>
+    <div class="footer-container">
         <p>©2024 🛶Offshore Adventure Rafting 🛶Jeffrey</p>
-        <p>Follow us on:</p>
-        <div class="social-links">
         <nav>
           <a href="https://facebook.com">
           <img src="images/social link/Facebook-svg.webp" alt="Facebook">
@@ -88,7 +157,6 @@
           <img src="images/social link/twitter.webp" alt="Twitter">
           </a>
         </nav>
-        </div>
       </div>
    </footer>
 </body>
