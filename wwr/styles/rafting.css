@@ -3,16 +3,16 @@
     --secondary-color: #f1c40f;
     --background-color: #beb7b7ac;
     --text-color1: #333;
-    --color2: #F0F8FF;
+    --accent1-color: #F0F8FF;
     --color7:  #0909DB;
     --color9: #ddd;
     --color: white;
     --color8: #f39c12;
     --color6: #2C2CAE;
     --color4: #000000;
-    --color3: #E6E6E6;
+    --accent2-color: #E6E6E6;
     --color5: #ccc;
-    --a-hover:#3480b2
+    --a-hover: #3480b2; 
     --font-primary: 'Poppins', sans-serif;
 }
 * {
@@ -204,11 +204,9 @@ label {
     display: block; 
     font-size: 0.9rem;  
     padding: 5px;
-    border: solid color( red green blue);
+
 }
-.radio > label {
-    padding: 5px;
-    }
+
 label, input, button, select, textarea {
     font-family: 'Poppins', sans-serif;
 }
@@ -364,5 +362,3 @@ nav a img {
     width: 40px;
     margin-left: 20px; 
 }
-
-
